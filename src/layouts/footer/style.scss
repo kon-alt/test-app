@@ -1,0 +1,8 @@
+.footer {
+  background-color: #7fde7f;
+  height: 100px;
+
+  @media(min-width: 475px) {
+    background-color: rgb(0, 128, 0);
+  }
+}

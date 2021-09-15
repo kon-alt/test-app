@@ -1,0 +1,27 @@
+.todo {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 475px) {
+    flex-direction: row;
+  }
+}
+
+.todo-list {
+  padding-left: 0;
+
+  &__item {
+    max-width: 220px;
+    list-style: none;
+    border-bottom: 1px solid #CCCCCC;
+  }
+}
+
+.todo-button-group {
+  display: inline-block;
+  height: 40px;
+
+  @media (min-width: 475px) {
+    margin-left: auto;
+  }
+}

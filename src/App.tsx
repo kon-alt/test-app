@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {FC} from 'react';
+import './App.scss';
+import Header from "./layouts/header";
+import Footer from "./layouts/footer";
+import Tabs from "./tabs";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App: FC<any> = () => {
+    return (
+        <div className="wrapper">
+            <Header title={'Some header'}/>
+            <div className="content">
+                <Tabs/>
+            </div>
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;

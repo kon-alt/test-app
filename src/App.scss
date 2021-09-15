@@ -1,0 +1,31 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 30px;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 0;
+}
